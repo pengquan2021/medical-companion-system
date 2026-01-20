@@ -1,0 +1,6 @@
+# .stylelintignore
+node_modules/
+dist/
+*.min.css
+*.log
+.DS_Store
