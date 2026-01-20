@@ -1,4 +1,4 @@
-// commitlint.config.js
+// commitlint.config.cjs
 module.exports = {
   extends: ['@commitlint/config-conventional'],
   rules: {
@@ -7,16 +7,16 @@ module.exports = {
       2,
       'always',
       [
-        'feat',      // 新功能
-        'fix',       // 修复bug
-        'docs',      // 文档更新
-        'style',     // 代码格式
-        'refactor',  // 重构
-        'test',      // 测试
-        'chore',     // 构建/工具
-        'revert',    // 回退
-        'perf',      // 性能优化
-        'ci',        // CI/CD
+        'feat', // 新功能
+        'fix', // 修复bug
+        'docs', // 文档更新
+        'style', // 代码格式
+        'refactor', // 重构
+        'test', // 测试
+        'chore', // 构建/工具
+        'revert', // 回退
+        'perf', // 性能优化
+        'ci', // CI/CD
       ],
     ],
     // 提交类型不能为空
@@ -32,9 +32,7 @@ module.exports = {
     'header-max-length': [2, 'always', 100],
     // 消息体前空行
     'body-leading-blank': [2, 'always'],
-    // 消息体后空行
-    'body-leading-blank': [2, 'always'],
     // 消息尾前空行
     'footer-leading-blank': [2, 'always'],
   },
-}
+};
