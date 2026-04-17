@@ -45,7 +45,7 @@ export default [
       'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
       'prefer-const': 'error',
       'arrow-parens': ['error', 'always'],
-      'comma-dangle': ['error', 'always-multiline'],
+      'comma-dangle': 'off',
 
       // Prettier 相关
       'prettier/prettier': [
