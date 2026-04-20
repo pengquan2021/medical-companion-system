@@ -2,13 +2,13 @@ import { createRouter, createWebHashHistory } from 'vue-router';
 import Login from '../views/login/index.vue';
 import Layout from '../views/main.vue';
 
-const localData = localStorage.getItem('pz_v3pz');
 const routes = [
   {
     path: '/',
     component: Layout,
     name: 'main',
     redirect: () => {
+      const localData = localStorage.getItem('pz_v3pz');
       if (localData) {
         //有子菜单
         const child = JSON.parse(localData).menu.routerList[0].children;
@@ -18,7 +18,7 @@ const routes = [
           return JSON.parse(localData).menu.routerList[0].meta.path;
         }
       } else {
-        return '/';
+        return '/login';
       }
     },
     children: [
